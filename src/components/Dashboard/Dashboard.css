@@ -1,0 +1,106 @@
+.dash-container {
+    width: 100%;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    background-color: #d7e6ec;
+}
+
+.dash-header {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.dash-header h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-left: 10px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll; 
+    padding-bottom: 10px; 
+    align-items: center;
+    justify-content: start; 
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    width: 450px;
+    height: 230px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; 
+    position: relative; 
+    scroll-snap-align: start; 
+}
+
+.widget-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px; 
+    align-self: flex-start;
+    width: 100%;
+}
+
+.ri-close-circle-fill{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    transition: all ease-in-out .3s;
+}
+
+.ri-close-circle-fill:hover{
+    /* transform: scale(1.1); */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+.add-widget-card {
+    width: 450px;
+    height: 230px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #737576;
+    font-weight: 300;
+    text-align: center;
+    flex-shrink: 0; 
+}
+.add-widget-card strong{
+    border: 1px solid #D7E6EC;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.add-widget-card:hover {
+    background-color: #f6f4f4; 
+}
+
+

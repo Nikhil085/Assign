@@ -1,0 +1,127 @@
+.c-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 59, 59, 0.283);
+    position: absolute;
+    z-index: 9999;
+}
+
+.head{
+    height: 40px;
+    background-color: blue;
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 10px;
+   color: #fff;
+
+}
+.head i{
+    margin-top: 24px;
+    margin-right: 10px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.Left{
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+    width: 40%;
+    position: absolute;
+    left: auto;
+    right: 0;
+    flex-direction: column;
+    /* padding: 20px; */
+}
+
+.Left h3{
+    font-weight: 400;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.categories {
+    height: 30px;
+    width: 100%;
+    /* background-color: #f7f7f7; */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.categories ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.categories li {
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px; 
+  /* background-color: red; */
+  font-size: 14px;
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+}
+
+.active {
+    border-bottom: 2px solid blue;
+    color: #060000;
+    font-weight: 600;
+  }
+
+.c-list{
+    list-style: none;
+    /* margin-top: 20px; */
+    padding: 30px;
+    max-height: 81%;
+    overflow: hidden;
+    /* background-color: red; */
+    overflow-y: auto;
+    -webkit-scrollbar: none;
+  -moz-scrollbar-width: none;
+  scrollbar-width: none;
+}
+
+.list-item{
+   margin-top: 10px;
+   gap: 20px;
+   border: 2px solid rgba(174, 174, 174, 0.756);
+   padding: 10px;
+   font-weight: 400;
+   font-size: 14px;
+   align-items: center;
+}
+
+.list-item span{
+    margin-left: 10px;
+}
+
+.button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+    
+}
+.button button{
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: rgb(253, 253, 255);
+    color: #202020;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.button button:first-child{
+    color: #fff;
+    background-color: blue;
+    border: 2px solid blue;
+}
